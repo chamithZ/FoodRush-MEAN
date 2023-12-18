@@ -4,12 +4,11 @@ const express =require('express')
 
 //express app
 const app=express()
-
+const restaurantRoute=require('./routes/restaurant')
 
 //routes 
-app.get('/',(req,res)=>{
-    res.json("hehe")
-})
+
+app.use('/restaurant',restaurantRoute)
 
 //middleware for check requests
 app.use((req,res,next)=>{
