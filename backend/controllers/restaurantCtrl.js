@@ -19,12 +19,10 @@ const addRestaurant = async (req, res) => {
     } catch (error) {
         console.error('Error adding restaurant:', error);
         res.status(500).json({ success: false, message: 'Internal server error' });
-    } finally {
+    } finally { 
         client.close();
     }
 };
-
-
 
 
 
