@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const restaurantRoute = require('./routes/restaurant');
+const userRoute = require('./routes/userRoutes');
 
 const app = express();
 const PORT = process.env.PORT;
@@ -16,7 +17,8 @@ app.use((req, res, next) => {
 });
 
 app.use('/restaurant', restaurantRoute);
-
+app.use('/user',userRoute)
+ 
 app.listen(PORT, () => {
   console.log('Server is running on port', PORT);
 });
