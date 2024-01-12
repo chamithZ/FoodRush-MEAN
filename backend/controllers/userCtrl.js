@@ -12,8 +12,8 @@ const addUser = async (req, res) => {
 
     try {
         const result = await user.insertOne(req.body);
-         res.status(200).json({ success: true, message: 'User added successfully' });
-        
+        res.status(200).json({ success: true, message: 'User added successfully' });
+         
         
     } catch (error) {
         console.error('Error adding restaurant:', error);
