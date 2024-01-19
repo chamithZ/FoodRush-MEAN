@@ -3,7 +3,7 @@ export interface User{
     userName:string;
     email:string
     password:string;
-    location:string;
+    address:string;
     resLocation:string;
     restaurentName:string;
     contactNo:String;

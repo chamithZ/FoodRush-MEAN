@@ -13,7 +13,7 @@ export class AddRestaurantComponent implements OnInit{
     userName:[''],
     email:[''],
     password:[''],
-    location:[''],
+    address:[''],
     resLocation:[''],
     restaurentName:[''],
     contactNo:[''],
