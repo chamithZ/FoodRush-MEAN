@@ -11,6 +11,7 @@ import { DishComponent } from './dish/dish.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AddRestaurantComponent } from './add-restaurant/add-restaurant.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AddDishComponent } from './add-dish/add-dish.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SearchComponent,
     StoreComponent,
     DishComponent,
-    AddRestaurantComponent
+    AddRestaurantComponent,
+    AddDishComponent
   ],
   imports: [
     BrowserModule,
